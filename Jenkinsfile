@@ -2,12 +2,12 @@ pipeline {
     agent any
 
 	tools {
-		maven 'maven3.6'
+		maven 'maven3.5.4'
 	}
 
-//	environment {
-//		M2_INSTALL = "/home/gamut/Distros/apache-maven-3.6.0/bin/mvn"
-//	}
+	environment {
+		M2_INSTALL = "/home/sarath/Softwares/apache-maven-3.6.0/bin/mvn"
+	}
 
     stages {
 		stage('Clone-Repo') {
